@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kegiatan">
+        <item>Hiking Gunung</item>
+        <item>Panjat Tebing</item>
+        <item>Caveing</item>
+        <item>Snorkling</item>
+        <item>Rafting</item>
+        <item>Survival</item>
+    </string-array>
+</resources>
