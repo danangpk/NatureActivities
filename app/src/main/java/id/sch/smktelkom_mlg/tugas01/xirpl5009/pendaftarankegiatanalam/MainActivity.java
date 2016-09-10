@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 if (cbSV.isChecked()) hsl2 += cbSV.getText() + "\n";
                 if (hsl2.length() == startlen) hsl2 += "Belum Pernah Melakukan Kegiatan";
 
-                tvDA.setText("DATA ANDA :");
+                tvDA.setText("DATA ANDA");
                 tvHasil.setText("Nama Depan :\n" + nama + "\n\nNama Belakang : \n" + nama1 + "\n\nJenis Kelamim : \n" + hsl1 + "\n\n Kegiatan yang Pernah Anda Ikuti : \n" + wishact + "\n\n" + hsl2);
             }
         });
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (nama1.isEmpty()) {
-            etNB.setError("Anda Belum Mengisi Nama Depan");
+            etNB.setError("Anda Belum Mengisi Nama Belakang");
         }
 
         return valid;
