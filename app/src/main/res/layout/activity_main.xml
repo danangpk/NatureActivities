@@ -33,14 +33,16 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="Daftar Kegiatan Alam!"
-            android:textColor="#895a13"
+            android:textColor="#542A1C"
             android:textSize="25dp" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nama Depan" />
+            android:text="Nama Depan"
+            android:textColor="#015931"
+            android:textSize="16dp" />
 
         <EditText
             android:id="@+id/editTextND"
@@ -51,7 +53,9 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nama Belakang" />
+            android:text="Nama Belakang"
+            android:textColor="#015931"
+            android:textSize="16dp" />
 
         <EditText
             android:id="@+id/editTextNB"
@@ -62,7 +66,9 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jenis Kelamin" />
+            android:text="Jenis Kelamin"
+            android:textColor="#015931"
+            android:textSize="16dp" />
 
         <RadioGroup
             android:id="@+id/radioGroupJK"
@@ -73,7 +79,7 @@
                 android:id="@+id/radioButtonL"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:checked="false"
+                android:checked="true"
                 android:text="Laki-laki" />
 
             <RadioButton
@@ -88,7 +94,9 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kegiatan yang Ingin Diikuti" />
+            android:text="Kegiatan yang Ingin Diikuti"
+            android:textColor="#015931"
+            android:textSize="16dp" />
 
         <Spinner
 
@@ -102,7 +110,9 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kegiatan yang Pernah Diikuti" />
+            android:text="Kegiatan yang Pernah Diikuti"
+            android:textColor="#015931"
+            android:textSize="16dp" />
 
         <CheckBox
             android:id="@+id/checkBoxMG"
@@ -159,6 +169,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="Data Anda"
+            android:textColor="#015931"
             android:textSize="18dp" />
 
         <TextView

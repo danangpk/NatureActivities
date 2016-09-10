@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         bD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (isValid()) ;
 
                 String nama = etND.getText().toString();
                 String nama1 = etNB.getText().toString();
@@ -72,5 +73,22 @@ public class MainActivity extends AppCompatActivity {
                 tvHasil.setText("Nama Depan :\n" + nama + "\n\nNama Belakang : \n" + nama1 + "\n\nJenis Kelamim : \n" + hsl1 + "\n\n Kegiatan yang Pernah Anda Ikuti : \n" + wishact + "\n\n" + hsl2);
             }
         });
+    }
+
+    private boolean isValid() {
+        boolean valid = true;
+
+        String nama = etND.getText().toString();
+        String nama1 = etNB.getText().toString();
+
+        if (nama.isEmpty()) {
+            etND.setError("Anda Belum Mengisi Nama Depan");
+        }
+
+        if (nama1.isEmpty()) {
+            etNB.setError("Anda Belum Mengisi Nama Depan");
+        }
+
+        return valid;
     }
 }
