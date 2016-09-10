@@ -36,31 +36,29 @@
             android:textColor="#542A1C"
             android:textSize="25dp" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nama Depan"
-            android:textColor="#015931"
-            android:textSize="16dp" />
-
-        <EditText
-            android:id="@+id/editTextND"
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nama Belakang"
-            android:textColor="#015931"
-            android:textSize="16dp" />
+            <EditText
+                android:id="@+id/editTextND"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Depan" />
 
-        <EditText
-            android:id="@+id/editTextNB"
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextNB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Belakang" />
+
+        </android.support.design.widget.TextInputLayout>
 
         <TextView
             android:id="@+id/textView2"
