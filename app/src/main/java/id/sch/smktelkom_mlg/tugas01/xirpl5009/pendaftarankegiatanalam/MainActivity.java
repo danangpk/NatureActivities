@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     RadioButton rbL, rbP;
     Spinner sK;
     CheckBox cbMG, cbPT, cbCV, cbSK, cbRF, cbSV;
-    Button bD;
+    Button bD, bR;
     TextView tvHasil;
 
     @Override
@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         cbSV = (CheckBox) findViewById(R.id.checkBoxSV);
 
         bD = (Button) findViewById(R.id.buttonD);
+        bR = (Button) findViewById(R.id.buttonR);
 
         tvHasil = (TextView) findViewById(R.id.textViewHasil);
 
@@ -71,6 +72,22 @@ public class MainActivity extends AppCompatActivity {
                 if (hsl2.length() == startlen) hsl2 += "Belum Pernah Melakukan Kegiatan";
 
                 tvHasil.setText("Nama Depan :\n" + nama + "\n\nNama Belakang : \n" + nama1 + "\n\nJenis Kelamim : \n" + hsl1 + "\n\n Kegiatan yang Pernah Anda Ikuti : \n" + wishact + "\n\n" + hsl2);
+            }
+        });
+
+        bR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                etND.setText("");
+                etNB.setText("");
+                cbMG.setChecked(false);
+                cbPT.setChecked(false);
+                cbCV.setChecked(false);
+                cbSK.setChecked(false);
+                cbRF.setChecked(false);
+                cbSV.setChecked(false);
+                sK.setSelection(0);
+                tvHasil.setText("");
             }
         });
     }
