@@ -44,6 +44,7 @@
                 android:id="@+id/editTextND"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:hint="Nama Depan" />
 
         </android.support.design.widget.TextInputLayout>
@@ -64,6 +65,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="Jenis Kelamin"
             android:textColor="#015931"
             android:textSize="16dp" />
@@ -92,15 +94,16 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="Kegiatan yang Ingin Diikuti"
             android:textColor="#015931"
             android:textSize="16dp" />
 
         <Spinner
-
             android:id="@+id/spinnerK"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:entries="@array/kegiatan"
             android:spinnerMode="dialog" />
 
@@ -108,6 +111,7 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="Kegiatan yang Pernah Diikuti"
             android:textColor="#015931"
             android:textSize="16dp" />
@@ -116,6 +120,7 @@
             android:id="@+id/checkBoxMG"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:checked="false"
             android:text="Mendaki Gunung" />
 
@@ -154,26 +159,43 @@
             android:checked="false"
             android:text="Survival" />
 
-        <Button
-            android:id="@+id/buttonD"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:text="Daftar" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
 
-        <Button
-            android:id="@+id/buttonR"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:text="RESET" />
+            <Button
+                android:id="@+id/buttonD"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@+id/buttonR"
+                android:layout_toStartOf="@+id/buttonR"
+                android:background="@drawable/bgbtn"
+                android:text="Daftar"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/buttonR"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:background="@drawable/bgbtn"
+                android:text="RESET"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textViewDA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Data Anda"
             android:textColor="#015931"
             android:textSize="18dp" />
 

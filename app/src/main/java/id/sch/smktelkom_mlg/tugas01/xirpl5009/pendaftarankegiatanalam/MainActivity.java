@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Spinner sK;
     CheckBox cbMG, cbPT, cbCV, cbSK, cbRF, cbSV;
     Button bD, bR;
-    TextView tvHasil;
+    TextView tvDA, tvHasil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         bD = (Button) findViewById(R.id.buttonD);
         bR = (Button) findViewById(R.id.buttonR);
 
+        tvDA = (TextView) findViewById(R.id.textViewDA);
         tvHasil = (TextView) findViewById(R.id.textViewHasil);
 
         bD.setOnClickListener(new View.OnClickListener() {
@@ -71,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 if (cbSV.isChecked()) hsl2 += cbSV.getText() + "\n";
                 if (hsl2.length() == startlen) hsl2 += "Belum Pernah Melakukan Kegiatan";
 
+                tvDA.setText("DATA ANDA :");
                 tvHasil.setText("Nama Depan :\n" + nama + "\n\nNama Belakang : \n" + nama1 + "\n\nJenis Kelamim : \n" + hsl1 + "\n\n Kegiatan yang Pernah Anda Ikuti : \n" + wishact + "\n\n" + hsl2);
             }
         });
